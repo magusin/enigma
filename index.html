@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire du temps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script language="javascript" type="text/javascript"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var myEvent = window.attachEvent || window.addEventListener;
+        var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload'; /// make IE7, IE8 compitable
+
+            myEvent(chkevent, function(e) { // For >=IE7, Chrome, Firefox
+                var confirmationMessage = 'Are you sure to leave the page?';  // a space
+                (e || window.event).returnValue = confirmationMessage;
+                return confirmationMessage;
+            });
+    </script>
+<div id="beforegames">
+    <h1 class="text-center mb-4 pt-3">Jeux du temps</h1>
+    <p class="text-center">Bonjour cher voyageur.
+        Bienvenue dans le jeu du temps, dans lequel vous êtes le héros.
+    </p> 
+    <p class="text-center">Chaque énigme va demander le mot exacte pour passer à l'étape suivante, chaque mot est en relation avec la page où vous vous trouvez SAUF pour le tout dernier qui est un peu plus complexe.</p>
+ 
+    <p class="text-center mb-4">Alors vous vous sentez prêt ? Lancez-vous !</p>
+    <form onsubmit="init()" class="start">
+        <div class="mb-3 text-center">
+            <label for="text" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" required>
+        </div>
+      <div class="mb-3 text-center">
+        <label for="text" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="prenom" required>
+      </div>
+      <input type="submit" name="submit"  value="Commencer" class="submit"/>
+    </form>  
+</div>
+<div id="game" class="hidden">
+    <h1 class="text-center mb-4 pt-3">1888</h1>
+<p> </p>
+<img class="pr-3 mr-3" src="./image/2.jpg" alt="">
+<form onsubmit="check_pass()" name="myForm" class="myForm">
+    <div class="mb-3 text-center">
+        <label for="text" class="form-label">PassWord</label>
+        <input style="text-transform: lowercase" type="text" class="pass form-control" id="pass" required>
+        <input type="submit" name="submit"  value="Pass"/>
+    </div>
+</form>
+</div>
+<div id="games2" class="hidden">
+    GG <span class="nom"></span><span class="prenom"></span>
+</div>
+<script src="./js/index.js"></script>
+<script src="./js/password.js"></script>
+</body>
+</html>

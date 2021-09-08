@@ -1,0 +1,47 @@
+.start {
+    text-align: center;
+}
+
+#beforegames {
+    position: relative;
+    height: 100vh;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+#beforegames:before {
+    content: "";
+    background-image: url('./image/horloge1.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+#game {
+    position: relative;
+    height: 100vh;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+#game:before {
+    content: "";
+    background-image: url('./image/1.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.hidden {
+    display: none;
+}
