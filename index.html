@@ -23,9 +23,9 @@
 <div id="beforegames">
     <h1 class="text-center mb-4 pt-3">Jeux du temps</h1>
     <p class="text-center">Bonjour cher voyageur.
-        Bienvenue dans le jeu du temps, dans lequel vous êtes le héros.
+        Bienvenue dans Enigma, dans ce jeu vous êtes le héros.
     </p> 
-    <p class="text-center">Chaque énigme va demander le mot exacte pour passer à l'étape suivante, chaque mot est en relation avec la page où vous vous trouvez SAUF pour le tout dernier qui est un peu plus complexe.</p>
+    <p class="text-center">Chaque énigme va demander le mot exacte pour passer à l'étape suivante, chaque mot est en relation avec la page où vous vous trouvez SAUF pour les dernier qui sont un peu plus complexe.</p>
  
     <p class="text-center mb-4">Alors vous vous sentez prêt ? Lancez-vous !</p>
     <form onsubmit="init()" class="start">
@@ -41,19 +41,29 @@
     </form>  
 </div>
 <div id="game" class="hidden">
-    <h1 class="text-center mb-4 pt-3">1888</h1>
-<p> </p>
-<img class="pr-3 mr-3" src="./image/2.jpg" alt="">
+    <h2 class="text-center mb-4 pt-3"> France, Auvers-sur-Oise, 1890</h2>
+<p class="ms-3">Vous voilà dans une chambre. </p>
+<p class="ms-3">1880. Cette année résonne dans votre tête.</p>
+<p class="ms-3">Que faites-vous ici ? Comment êtes-vous arrivez ici ? Qui êtes-vous ?</p>
+<p class="ms-3">Toutes ces questions demeurent sans réponses, vous êtes désorienté</p>
+<div class="flex">
+    <img src="./image/2.jpg" alt="">
+    <div><p>Une peinture repose sur un chevalet, une église.</p>
+    <p>Vous connaissez l'artiste qui l'a peint, vous avez vu son nom il y a peu.</p></div>
+</div>
 <form onsubmit="check_pass()" name="myForm" class="myForm">
-    <div class="mb-3 text-center">
-        <label for="text" class="form-label">PassWord</label>
-        <input style="text-transform: lowercase" type="text" class="pass form-control" id="pass" required>
-        <input type="submit" name="submit"  value="Pass"/>
+    <div class="mb-3 text-center ms-5 me-5">
+        <label for="text" class="form-label">Mais sauriez-vous vous rappeler son nom ?</label>
+        <input type="text" class="pass form-control" id="pass" required>
+        <input type="submit" name="submit"  value="Valider"/>
     </div>
 </form>
 </div>
 <div id="games2" class="hidden">
-    GG <span class="nom"></span><span class="prenom"></span>
+    <h2></h2>
+    <p></p>
+    <span class="nom"></span>
+    <span class="prenom"></span>
 </div>
 <script src="./js/index.js"></script>
 <script src="./js/password.js"></script>
