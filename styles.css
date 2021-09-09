@@ -49,6 +49,26 @@ justify-content: space-around;
     z-index: -1;
 }
 
+#games2 {
+    position: relative;
+    height: 100vh;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+#games2:before {
+    content: "";
+    background-image: url('./image/4.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+    z-index: -1;
+}
+
 .hidden {
     display: none;
 }
