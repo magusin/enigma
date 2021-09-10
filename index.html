@@ -47,7 +47,7 @@
 <p class="ms-3">Que faites-vous ici ? Comment êtes-vous arrivez ici ? Qui êtes-vous ?</p>
 <p class="ms-3">Toutes ces questions demeurent sans réponses, vous êtes désorienté et elles devront attendre, vous observez la chambre.</p>
 <div class="flex">
-    <img src="./image/2.jpg" alt="">
+    <img class="mx-5" src="./image/2.jpg" alt="">
     <div class="align-self-center"><p>Une peinture repose sur un chevalet, une église.</p>
     <p>Vous connaissez l'artiste qui l'a peint, vous avez vu son nom il y a peu.</p></div>
 </div>
@@ -67,7 +67,7 @@
     <p class="ms-3">Vous observez le laboratoire.</p>
     <div class="flex">
         <a href="./image/3.jpg">
-            <img src="./image/3.jpg" style="width: 400px; height: 500px;" onclick="window.open(this.src); return false;">
+            <img class="mx-5" src="./image/3.jpg" style="width: 400px; height: 500px;" onclick="window.open(this.src); return false;">
             </a>
         <div class="align-self-center"><p>Du matériel et des documents, beaucoup relatent des résultats d'expériences.</p>
         <p>Des expériences de chimie sur l'uranium, la majorité sur la radioactivité, ainsi qu'une thèse de doctorat. </p>
@@ -83,10 +83,32 @@
     </form>
 </div>
 <div id="games3" class="hidden">
-<p>GG</p>
-<p>Ca vous revient, vous-êtes <span class="nom"></span> <span class="prenom"> </span></p>
-
-
+    <h2 class="text-center mb-4 pt-3">Royaume-Uni, Liverpool, 1912</h2>
+<p class="ms-3">Bravo, vous êtes transporté ailleur</p>
+<p class="ms-3">Ca vous revient ! Vous-êtes <span class="nom"></span> <span class="prenom"> </span>.</p>
+<p class="ms-3">Le reste devra attendre, vous regardez dans la pièce dans laquelle vous vous trouvez maintenant.</p>
+<div class="flex">
+    <a href="./image/5.jpg">
+        <img class="mx-5" src="./image/5.jpg" style="width: 400px; height: 500px;" onclick="window.open(this.src); return false;">
+        </a>
+    <div class="align-self-center">
+    <p>Un poste de contrôle, des appareil de mesures et de télégraphie, des suivis de position. </p>
+    <p>La compagnie dans laquelle vous vous trouvez semble s'appeler "White Star Line". </p>
+    <p>Vous retrouvez un message envoyé il y a peu par un bateau de croisière.</p>
+    <p></p>
+    <p>··· −−− ··· </p>
+</div>
+</div>
+<form onsubmit="check_pass_games3()" name="myForm" class="myForm">
+    <div class="mb-3 text-center ms-5 me-5">
+        <label for="text" class="form-label">Quel est ce message ?</label>
+        <input type="text" class="pass form-control" id="pass3" required>
+        <input type="submit" name="submit"  value="Valider"/>
+    </div>
+</form>
+</div>
+<div id="games4" class="hidden">
+<p>Bravo bientôt la suite du jeux.</p>
 </div>
 <script src="./js/index.js"></script>
 <script src="./js/password.js"></script>
